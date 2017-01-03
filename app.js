@@ -30,10 +30,28 @@ if (q2 === 'Yes' || 'Y' || 'yes') {
 }
 
 var q3 = prompt('Third question ' + user + ': Is David going to the Seahawks Playoff game this weekend?').toUpperCase();
-if (q3 === 'Yes' || 'Y' || 'yes') {
+if (q3 === 'Yes' || 'Y' || 'ya') {
   alert('YUUUUUUUPPPPPP! You\'re a smart cookie!');
   console.log('They got q3 right!');
 } else {
   alert('WA WA WA WAAAAAA! You got it wrong. GO HAWKS!');
   console.log('They got q3 wrong!');
+}
+
+var q4 = prompt('fourth question ' + user + ': Does David love the Portland Timbers?').toUpperCase();
+if (q4 === 'No' || 'N' || 'na') {
+  alert('SWEEEEEETTTT! You know me so well!');
+  console.log('They got q4 right!');
+} else {
+  alert('WA WA WA WAAAAAA! You got it wrong. I thought we went way back bruv!');
+  console.log('They got q4 wrong!');
+}
+
+var q5 = prompt('Fifth question ' + user + ': Does David think codefellows is stupid?').toUpperCase();
+if (q5 === 'No' || 'N' || 'na') {
+  alert('GOOD JOB! Now we\'re besties!');
+  console.log('They got q5 right!');
+} else {
+  alert('WA WA WA WAAAAAA! You got it wrong. Codefellows is great!');
+  console.log('They got q5 wrong!');
 }
