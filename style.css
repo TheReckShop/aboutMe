@@ -1,0 +1,19 @@
+h1 {
+  font-family: helvetica;
+}
+
+p {
+  color: black;
+}
+
+.paragraph {
+  background-color: #0000FF;
+}
+
+#secondParagraph {
+  border: 5px dashed #0000AA;
+}
+
+* {
+  background: lightgrey;
+}
