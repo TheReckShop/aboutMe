@@ -12,7 +12,7 @@ var user = prompt('What is your name Bruh?');
 console.log('This user\'s name is ' + user + '!');
 
 var q1 = prompt('So first question ' + user + ': Does David own two cats?').toUpperCase();
-if (q1 === 'Yes' || 'Y' || 'Ya') {
+if (q1 === 'Yes' || q1 === 'Y' || q1 === 'Ya') {
   alert('OMG! You are TOTES RIGHT!');
   console.log('They got q1 right!');
 } else {
@@ -21,7 +21,7 @@ if (q1 === 'Yes' || 'Y' || 'Ya') {
 }
 
 var q2 = prompt('Second question ' + user + ': Does David manage a night club on the weekends?').toUpperCase();
-if (q2 === 'Yes' || 'Y' || 'yes') {
+if (q2 === 'Yes' || q2 === 'Y' || q2 === 'yes') {
   alert('CORRECT! You\'re a smart cookie!');
   console.log('They got q2 right!');
 } else {
@@ -30,7 +30,7 @@ if (q2 === 'Yes' || 'Y' || 'yes') {
 }
 
 var q3 = prompt('Third question ' + user + ': Is David going to the Seahawks Playoff game this weekend?').toUpperCase();
-if (q3 === 'Yes' || 'Y' || 'ya') {
+if (q3 === 'Yes' || q3 === 'Y' || q3 === 'ya') {
   alert('YUUUUUUUPPPPPP! You\'re a smart cookie!');
   console.log('They got q3 right!');
 } else {
@@ -39,7 +39,7 @@ if (q3 === 'Yes' || 'Y' || 'ya') {
 }
 
 var q4 = prompt('fourth question ' + user + ': Does David love the Portland Timbers?').toUpperCase();
-if (q4 === 'No' || 'N' || 'na') {
+if (q4 === 'No' || q4 === 'N' || q4 === 'na') {
   alert('SWEEEEEETTTT! You know me so well!');
   console.log('They got q4 right!');
 } else {
@@ -48,7 +48,7 @@ if (q4 === 'No' || 'N' || 'na') {
 }
 
 var q5 = prompt('Fifth question ' + user + ': Does David think codefellows is stupid?').toUpperCase();
-if (q5 === 'No' || 'N' || 'na') {
+if (q5 === 'No' || q5 === 'N' || q5 === 'na') {
   alert('GOOD JOB! Now we\'re besties!');
   console.log('They got q5 right!');
 } else {
