@@ -10,17 +10,22 @@ if (greeting) {
 
 var user = prompt('What is your name Bruh?');
 console.log('This user\'s name is ' + user + '!');
+document.write('User name is: ' + user);
 
 var q1 = prompt('So first question ' + user + ': Does David own two cats?').toUpperCase();
+document.write('So first question ' + user + ': Does David own two cats?');
 if (q1 === 'Yes' || q1 === 'Y' || q1 === 'Ya') {
   alert('OMG! You are TOTES RIGHT!');
   console.log('They got q1 right!');
+  document.write('RIGHT!');
 } else {
   alert('WA WA WA WAAAAAAA! You got it wrong. He has two kitties!');
   console.log('They got q1 wrong!');
+  document.write('WRONG!');
 }
 
 var q2 = prompt('Second question ' + user + ': Does David manage a night club on the weekends?').toUpperCase();
+document.write('Second question ' + user + ': Does David manage a night club on the weekends?');
 if (q2 === 'Yes' || q2 === 'Y' || q2 === 'yes') {
   alert('CORRECT! You\'re a smart cookie!');
   console.log('They got q2 right!');

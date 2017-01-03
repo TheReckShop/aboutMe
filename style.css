@@ -11,7 +11,7 @@ p {
 }
 
 #secondParagraph {
-  border: 5px dashed #0000AA;
+  border: 5px bold black;
 }
 
 * {
