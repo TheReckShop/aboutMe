@@ -89,12 +89,34 @@ if (q5 === 'NO' || q5 === 'N' || q5 === 'NA') {
   document.write('q5 WRONG!');
 }
 
-var q6Answer = parseInt(prompt('Sixth question ' + user + ': What is David\'s favorite number?'));
-document.write('Sixth question ' + user + ': What is David\'s favorite number?');
+document.write('Sixth question ' + user + ': What is David\'s favorite number? You have exactly 4 guesses.');
 
 var q6Guesses = 0;
 while (q6Guesses < 4) {
-  for (q6Answer === 7) {
-    alert('Well done! My favorite number is ')
+  var q6Answer = parseInt(prompt('Sixth question ' + user + ': What is David\'s favorite number?'));
+  if (q6Answer === 7) {
+    alert('Well done! My favorite number is ');
+    q6Guesses++;
+    console.log('q6 RIGHT!');
+    document.write('q6 RIGHT!');
+    rightAnswer++;
+    break;
+  } else if (q6Answer < 7) {
+    alert('Sorry ' + q6Answer + ' is too low...');
+    q6Guesses++;
+    document.write('q6 WRONG!');
+  } else if (q6Answer > 7) {
+    alert('Sorry ' + q6Answer + ' is to high... (just like TOWWWLLEEEE!)');
+    q6Guesses++;
+    document.write('q6 WRONG!');
+  } else {
+    alert('Please enter a number!');
+    q6Guesses++;
+    document.write('q6 WRONG!');
   }
+}
+
+var q7Guesses = 0;
+while (q7Guesses < 6) {
+  var q7Answer = prompt('Seventh Question')
 }
