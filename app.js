@@ -95,7 +95,7 @@ var q6Guesses = 0;
 while (q6Guesses < 4) {
   var q6Answer = parseInt(prompt('Sixth question ' + user + ': What is David\'s favorite number?'));
   if (q6Answer === 7) {
-    alert('Well done! My favorite number is ');
+    alert('Well done! My favorite number is ' + q6Answer + '!');
     q6Guesses++;
     console.log('q6 RIGHT!');
     document.write('q6 RIGHT!');
@@ -109,14 +109,29 @@ while (q6Guesses < 4) {
     alert('Sorry ' + q6Answer + ' is to high... (just like TOWWWLLEEEE!)');
     q6Guesses++;
     document.write('q6 WRONG!');
+    console.log('q6 WRONG!');
   } else {
     alert('Please enter a number!');
     q6Guesses++;
     document.write('q6 WRONG!');
+    console.log('q6 WRONG!');
   }
 }
 
 var q7Guesses = 0;
 while (q7Guesses < 6) {
-  var q7Answer = prompt('Seventh Question')
+  var q7Answer = prompt('Seventh Question ' + user + ': What other states besides Washington has David WORKED IN? You have six guesses. Please answer with a 2 letter state name...').toUpperCase();
+  if (q7Answer === 'NY' || q7Answer === 'UT' || q7Answer === 'LA') {
+    alert('Oh man! You must be mad psychic yo, because that is the correct answer!');
+    q7Guesses++;
+    console.log('q7 RIGHT!');
+    document.write('q7 RIGHT!');
+    rightAnswer++;
+    break;
+  } else {
+    alert('Sorry that is incorrect! Please make sure you\'re answer is in the for of two letters!');
+    q7Guesses++;
+    console.log('q7 WRONG!');
+    document.write('q7 WRONG!');
+  }
 }
