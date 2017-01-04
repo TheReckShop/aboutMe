@@ -14,7 +14,7 @@ document.write('User name is: ' + user);
 
 var q1 = prompt('So first question ' + user + ': Does David own two cats?').toUpperCase();
 document.write('So first question ' + user + ': Does David own two cats?');
-if (q1 === 'Yes' || q1 === 'Y' || q1 === 'Ya') {
+if (q1 === 'YES' || q1 === 'Y' || q1 === 'YA') {
   alert('OMG! You are TOTES RIGHT!');
   console.log('They got q1 right!');
   document.write('q1 RIGHT!');
@@ -26,7 +26,7 @@ if (q1 === 'Yes' || q1 === 'Y' || q1 === 'Ya') {
 
 var q2 = prompt('Second question ' + user + ': Does David manage a night club on the weekends?').toUpperCase();
 document.write('Second question ' + user + ': Does David manage a night club on the weekends?');
-if (q2 === 'Yes' || q2 === 'Y' || q2 === 'yes') {
+if (q2 === 'YES' || q2 === 'Y' || q2 === 'YA') {
   alert('CORRECT! You\'re a smart cookie!');
   console.log('They got q2 right!');
   document.write('You got q2 right!');
@@ -38,7 +38,7 @@ if (q2 === 'Yes' || q2 === 'Y' || q2 === 'yes') {
 
 var q3 = prompt('Third question ' + user + ': Is David going to the Seahawks Playoff game this weekend?').toUpperCase();
 document.write('Third question ' + user + ': Is David going to the Seahawks Playoff game this weekend?');
-if (q3 === 'Yes' || q3 === 'Y' || q3 === 'ya') {
+if (q3 === 'YES' || q3 === 'Y' || q3 === 'YA') {
   alert('YUUUUUUUPPPPPP! You\'re a smart cookie!');
   console.log('They got q3 right!');
   document.write('q3 RIGHT!');
@@ -50,7 +50,7 @@ if (q3 === 'Yes' || q3 === 'Y' || q3 === 'ya') {
 
 var q4 = prompt('fourth question ' + user + ': Does David love the Portland Timbers?').toUpperCase();
 document.write('fourth question ' + user + ': Does David love the Portland Timbers?');
-if (q4 === 'No' || q4 === 'N' || q4 === 'na') {
+if (q4 === 'NO' || q4 === 'N' || q4 === 'NA') {
   alert('SWEEEEEETTTT! You know me so well!');
   console.log('They got q4 right!');
   document.write('q4 RIGHT1');
@@ -62,7 +62,7 @@ if (q4 === 'No' || q4 === 'N' || q4 === 'na') {
 
 var q5 = prompt('Fifth question ' + user + ': Does David think codefellows is stupid?').toUpperCase();
 document.write('Fifth question ' + user + ': Does David think codefellows is stupid?');
-if (q5 === 'No' || q5 === 'N' || q5 === 'na') {
+if (q5 === 'NO' || q5 === 'N' || q5 === 'NA') {
   alert('GOOD JOB! Now we\'re besties!');
   console.log('They got q5 right!');
   document.write('q5 RIGHT!');
