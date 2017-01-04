@@ -118,6 +118,8 @@ while (q6Guesses < 4) {
   }
 }
 
+document.write('Seventh Question ' + user + ': What other states besides Washington has David WORKED IN? You have six guesses. Please answer with a 2 letter state name...');
+
 var q7Guesses = 0;
 while (q7Guesses < 6) {
   var q7Answer = prompt('Seventh Question ' + user + ': What other states besides Washington has David WORKED IN? You have six guesses. Please answer with a 2 letter state name...').toUpperCase();
@@ -134,4 +136,10 @@ while (q7Guesses < 6) {
     console.log('q7 WRONG!');
     document.write('q7 WRONG!');
   }
+}
+
+if (rightAnswer === 7) {
+  alert('WELL DONE SON! YOUR SCORE WAS ' + rightAnswer + ' OUT OF 7!!! YOU GOT EVERY ANSWER CORRECT!');
+} else {
+  alert('Sorry, ' + user + ' you only got ' + rightAnswer + ' out of 7 correct. TRY AGAIN!');
 }
