@@ -1,20 +1,34 @@
 h1 {
-  font-family: helvetica;
+  font-family: impact;
   font-size: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%
+}
+
+h3 {
+  font-size: 20px;
+  font-family: sans-serif;
 }
 
 p {
-  color: white;
+  color: black;
+  font: impact sans-serif;
 }
 
-.paragraph {
-  background-color: #0000FF;
-}
-
-#secondParagraph {
-  border: 5px bold black;
-}
 
 * {
   background: lightgrey;
+}
+
+.section {
+  border: 5px solid black;
+  background-color: white;
+  margin: 25px;
+  padding: 10px 10px;
+  font: sans-serif;
+}
+
+ol {
+  font: sans-serif;
 }
