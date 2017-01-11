@@ -10,6 +10,7 @@ if (greeting) {
 
 var user = prompt('What is your name Bruh?');
 console.log('This user\'s name is ' + user + '!');
+
 document.write('User name is: ' + user + '. ');
 
 var rightAnswer = 0;
@@ -159,6 +160,8 @@ questionFour();
 questionFive();
 questionSix();
 questionSeven();
+
+=======
 
 if (rightAnswer === 7) {
   alert('WELL DONE SON! YOUR SCORE WAS ' + rightAnswer + ' OUT OF 7!!! YOU GOT EVERY ANSWER CORRECT!');
