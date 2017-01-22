@@ -5,7 +5,10 @@ var counter = 0;
 function name = prompt('Hello what\'s your name?') {
 alert('Welcome ' + name + ', glad you\'re here!');
 userName = name;
-name();       
+break;
+};
+name(); 
+      
        
 function q1 () {var answer1 = prompt('Was I born in Kirkland, WA?').toLowerCase();
   if (answer1 === 'yes' || answer1 === 'y') {
