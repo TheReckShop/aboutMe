@@ -2,10 +2,70 @@
 
 var userName;
 var counter = 0;
+<<<<<<< HEAD
 function start() {var intro = confirm('Hello what\'s your name?');
   while (start = true) {
     alert('Welcome ' + name + ', glad you\'re here!');
     break;
+=======
+function name = prompt('Hello what\'s your name?') {
+alert('Welcome ' + name + ', glad you\'re here!');
+userName = name;
+break;
+};
+name(); 
+      
+       
+function q1 () {var answer1 = prompt('Was I born in Kirkland, WA?').toLowerCase();
+  if (answer1 === 'yes' || answer1 === 'y') {
+    alert('Right! Well done.');
+    console.log('q1 Right!');
+    counter++;
+  } else {
+    alert('Wrong! Try again...');
+  
+  }
+  console.log('q1 wrong');       
+    break; 
+  }  
+
+q1();
+
+function q2() { var answer2 = prompt('Have I been playing guitar since I was 15?').toLowerCase();
+  if (answer2 === 'yes' || answer2 === 'y') {
+    alert('Correct! Well done!');
+    counter++;
+    console.log('q2 right!');
+  } else {
+    alert('WRONG! How could you not know?');
+    console.log('q2 wrong!');
+  }
+}
+
+q2();
+
+function q3() {var answer3 = prompt('Do I have 2 cats?').toLowerCase();
+  if (answer3 === 'yes' || answer3 === 'y') {
+    alert('Correct! Well done!');
+    counter++;
+    console.log('q3 right!');
+  } else {
+    alert('WRONG!');
+    console.log('q3 wrong!');
+  }
+}
+
+q3();
+
+function q4() {var answer4 = prompt('Do I hate the Sounders?').toLowerCase();
+  if (answer4 === 'no' || answer4 === 'n') {
+    alert('Correct! GO SOUNDERS!');
+    console.log('q4 right!');
+    counter++;
+6  } else {
+    alert('WRONG!');
+    console.log('q4 wrong!');
+>>>>>>> d61c94a05ebf1c77fb07ae9ae7eeace41030e2d6
   }
   while (start = false){
     alert('Please enter a name!');
