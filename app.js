@@ -3,7 +3,7 @@
 var userName;
 var counter = 0;
 function start() {var intro = confirm('Hello what\'s your name?');
-  console.console.log(start);
+  console.log(start);
   while (start = true) {
     alert('Welcome ' + name + ', glad you\'re here!');
     userName = intro;
