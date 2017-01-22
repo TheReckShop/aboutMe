@@ -1,12 +1,11 @@
 'use-strict';
 
-var userName;
+var start;
 var counter = 0;
 function start() {var intro = confirm('Hello what\'s your name?');
   console.log(start);
   while (start = true) {
     alert('Welcome ' + name + ', glad you\'re here!');
-    userName = intro;
     break;
   }
   while (start = false){
