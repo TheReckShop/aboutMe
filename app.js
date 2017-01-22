@@ -2,15 +2,17 @@
 
 var greeting = confirm('Hello, I\'m David C Cole\'s aboutMe Bot! We are going to play a guessing game! All questions have yes or no answers. Are you ready?');
 
-if (var a == greeting = true) {
-break;
+if (var a = false greeting = true) {
+
 } else { 
 console.log('OH NO! AHHHHHHHHHHHHH'
+       
 } 
 if (greeting) {('Woot
   console.log! You straight prepared holmes!');
 } else {
   console.log('OH NO! AHHHHHHHHHHHHH');
+  break;
 }
 
 var user = prompt('What is your name Bruh?');
