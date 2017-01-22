@@ -1,175 +1,247 @@
-'use strict';
+'use-strict';
+var userName:
 
-var greeting = confirm('Hello, I\'m David C Cole\'s aboutMe Bot! We are going to play a guessing game! All questions have yes or no answers. Are you ready?');
-
-if (var a = false greeting = true) {
-
-} else { 
-console.log('OH NO! AHHHHHHHHHHHHH'
+var counter = 0;
+function name = prompt('Hello what\'s your name?') {
+alert('Welcome ' + name + ', glad you\'re here!');
+userName = name;
+name();       
        
-} 
-if (greeting) {('Woot
-  console.log! You straight prepared holmes!');
-} else {
-  console.log('OH NO! AHHHHHHHHHHHHH');
-  break;
-}
-
-var user = prompt('What is your name Bruh?');
-console.log('This user\'s name is ' + user + '!');
-
-document.write('User name is: ' + user + '. ');
-
-var rightAnswer = 0;
-
-function questionOne() {
-  var q1 = prompt('So first question ' + user + ': Does David own two cats?').toUpperCase();
-  document.write('So first question ' + user + ': Does David own two cats? ');
-
-  if (q1 === 'YES' || q1 === 'Y' || q1 === 'YA') {
-    alert('OMG! You are TOTES RIGHT!');
-    console.log('They got q1 right!');
-    document.write('q1 RIGHT! ');
-    rightAnswer ++;
-    console.log('Answers correct = ' + rightAnswer);
+function q1 () {var answer1 = prompt('Was I born in Kirkland, WA?').toLowerCase();
+  if (answer1 === 'yes' || answer1 === 'y') {
+    alert('Right! Well done.');
+    console.log('q1 Right!');
+    counter++;
   } else {
-    alert('WA WA WA WAAAAAAA! You got it wrong. He has two kitties!');
-    console.log('They got q1 wrong!');
-    document.write('q1 WRONG! ');
+    alert('Wrong! Try again...');
+  
+  }
+  console.log('q1 wrong');       
+    break; 
+  }  
+
+q1();
+
+function q2() { var answer2 = prompt('Have I been playing guitar since I was 15?').toLowerCase();
+  if (answer2 === 'yes' || answer2 === 'y') {
+    alert('Correct! Well done!');
+    counter++;
+    console.log('q2 right!');
+  } else {
+    alert('WRONG! How could you not know?');
+    console.log('q2 wrong!');
   }
 }
 
-function questionTwo() {
-  var q2 = prompt('Second question ' + user + ': Does David manage a night club on the weekends?').toUpperCase();
-  document.write('Second question ' + user + ': Does David manage a night club on the weekends? ');
+q2();
 
-  if (q2 === 'YES' || q2 === 'Y' || q2 === 'YA') {
-    alert('CORRECT! You\'re a smart cookie!');
-    console.log('They got q2 right!');
-    document.write('You got q2 right! ');
-    rightAnswer++;
-    console.log('Answers correct = ' + rightAnswer);
+function q3() {var answer3 = prompt('Do I have 2 cats?').toLowerCase();
+  if (answer3 === 'yes' || answer3 === 'y') {
+    alert('Correct! Well done!');
+    counter++;
+    console.log('q3 right!');
   } else {
-    alert('WA WA WA WAAAAAA! You got it wrong. He does manage a nightclub on the weekends. He hates mondays');
-    console.log('They got q2 wrong!');
-    document.write('You got q2 wrong! ');
+    alert('WRONG!');
+    console.log('q3 wrong!');
   }
 }
 
-function questionThree() {
-  var q3 = prompt('Third question ' + user + ': Is David going to the Seahawks Playoff game this weekend?').toUpperCase();
-  document.write('Third question ' + user + ': Is David going to the Seahawks Playoff game this weekend? ');
+q3();
 
-  if (q3 === 'YES' || q3 === 'Y' || q3 === 'YA') {
-    alert('YUUUUUUUPPPPPP! You\'re a smart cookie!');
-    console.log('They got q3 right!');
-    document.write('q3 RIGHT! ');
-    rightAnswer++;
-    console.log('Answers correct = ' + rightAnswer);
-  } else {
-    alert('WA WA WA WAAAAAA! You got it wrong. GO HAWKS!');
-    console.log('They got q3 wrong!');
-    document.write('q3 WRONG! ');
+function q4() {var answer4 = prompt('Do I hate the Sounders?').toLowerCase();
+  if (answer4 === 'no' || answer4 === 'n') {
+    alert('Correct! GO SOUNDERS!');
+    console.log('q4 right!');
+    counter++;
+6  } else {
+    alert('WRONG!');
+    console.log('q4 wrong!');
   }
 }
 
-function questionFour() {
-  var q4 = prompt('fourth question ' + user + ': Does David love the Portland Timbers?').toUpperCase();
-  document.write('fourth question ' + user + ': Does David love the Portland Timbers? ');
+q4();
 
-  if (q4 === 'NO' || q4 === 'N' || q4 === 'NA') {
-    alert('SWEEEEEETTTT! You know me so well!');
-    console.log('They got q4 right!');
-    document.write('q4 RIGHT1 ');
-    rightAnswer++;
-    console.log('Answers correct = ' + rightAnswer);
+function q5() {var answer5 = prompt('Do I manage a night club?').toLowerCase();
+  if (answer5 === 'yes' || answer5 === 'y') {
+    alert('Correct! I manage the Underground!');
+    console.log('q5 right!');
+    counter++;
   } else {
-    alert('WA WA WA WAAAAAA! You got it wrong. I thought we went way back bruv!');
-    console.log('They got q4 wrong!');
-    document.write('q4 WRONG ');
+    alert('WRONG!');
+    console.log('q5 wrong!');
   }
 }
 
-function questionFive() {
-  var q5 = prompt('Fifth question ' + user + ': Does David think codefellows is stupid?').toUpperCase();
-  document.write('Fifth question ' + user + ': Does David think codefellows is stupid? ');
+q5();
 
-  if (q5 === 'NO' || q5 === 'N' || q5 === 'NA') {
-    alert('GOOD JOB! Now we\'re besties!');
-    console.log('They got q5 right!');
-    document.write('q5 RIGHT! ');
-    rightAnswer++;
-    console.log('Answers right = ' + rightAnswer);
-  } else {
-    alert('WA WA WA WAAAAAA! You got it wrong. Codefellows is great!');
-    console.log('They got q5 wrong!');
-    document.write('q5 WRONG! ');
-  }
-}
+function q6() {
 
-function questionSix() {
-  document.write('Sixth question ' + user + ': What is David\'s favorite number? You have exactly 4 guesses. ');
-
-  var q6Guesses = 0;
-  while (q6Guesses < 4) {
-    var q6Answer = parseInt(prompt('Sixth question ' + user + ': What is David\'s favorite number?'));
-    if (q6Answer === 7) {
-      alert('Well done! My favorite number is ' + q6Answer + '!');
-      q6Guesses++;
-      console.log('q6 RIGHT!');
-      document.write('q6 RIGHT! ');
-      rightAnswer++;
+  var numberGameGuesses = 0;
+  while(numberGameGuesses < 4) {
+    var answer6 = parseInt(prompt('What is my favorite number?'));
+    if (answer6 === 7) {
+      alert('Correct! You are obviously strong with the force young padawan...');
+      console.log('q6 right!');
       break;
-    } else if (q6Answer < 7) {
-      alert('Sorry ' + q6Answer + ' is too low...');
-      q6Guesses++;
-      document.write('q6 WRONG! ');
-    } else if (q6Answer > 7) {
-      alert('Sorry ' + q6Answer + ' is to high... (just like TOWWWLLEEEE!)');
-      q6Guesses++;
-      document.write('q6 WRONG! ');
-      console.log('q6 WRONG!');
+      counter++;
+    } else if(answer6 > 7) {
+      alert('Wrong! You\'re answer is too high!');
+      numberGameGuesses++;
+    } else if(answer6 < 7) {
+      alert('You\'re answer is too low!');
+      numberGameGuesses++;
     } else {
       alert('Please enter a number!');
-      q6Guesses++;
-      document.write('q6 WRONG! ');
-      console.log('q6 WRONG!');
+      numberGameGuesses++;
     }
+    console.log('q6 wrong!');
   }
 }
+q6();
 
-function questionSeven() {
-  document.write('Seventh Question ' + user + ': What other states besides Washington has David WORKED IN? You have six guesses. Please answer with a 2 letter state name... ');
-
-  var q7Guesses = 0;
-  while (q7Guesses < 6) {
-    var q7Answer = prompt('Seventh Question ' + user + ': What other states besides Washington has David WORKED IN? You have six guesses. Please answer with a 2 letter state name...').toUpperCase();
-    if (q7Answer === 'NY' || q7Answer === 'UT' || q7Answer === 'LA') {
-      alert('Oh man! You must be mad psychic yo, because that is the correct answer!');
-      q7Guesses++;
-      console.log('q7 RIGHT!');
-      document.write('q7 RIGHT! ');
-      rightAnswer++;
+function q7() {
+  var statesLivedIn = ['AZ', 'LA', 'NY'];
+  var statesGuesses = 0;
+  while(statesGuesses < 6) {
+    var answer7 = prompt('What states have I lived in besides Washington? Please use state abbreviations for you\'re answer.').toUpperCase();
+    if(answer7 === statesLivedIn[0] || answer7 === statesLivedIn[1] || answer7 === statesLivedIn[2]) {
+      alert('Correct! I have lived in that state!');
+      console.log('q7 right!');
+      counter++;
       break;
     } else {
-      alert('Sorry that is incorrect! Please make sure you\'re answer is in the for of two letters!');
-      q7Guesses++;
-      console.log('q7 WRONG!');
-      document.write('q7 WRONG! ');
+      alert('Sorry, you are incorrect!');
+      console.log('q7 wrong!');
+      statesGuesses++;
     }
   }
 }
+q7();
 
-questionOne();
-questionTwo();
-questionThree();
-questionFour();
-questionFive();
-questionSix();
-questionSeven();
+alert('You got' + counter + ' out of 7 correct!');
+var userName = false;
+for (userName = false); {prompt('Greetings!!! What is your name?')){
 
-if (rightAnswer === 7) {
-  alert('WELL DONE SON! YOUR SCORE WAS ' + rightAnswer + ' OUT OF 7!!! YOU GOT EVERY ANSWER CORRECT!');
-} else {
-  alert('Sorry, ' + user + ' you only got ' + rightAnswer + ' out of 7 correct. TRY AGAIN!');
+alert('Welcome ' + userName + ', glad you\'re here!');
+function intro() = for (var userName != true)
+alert('sorry bro try again!)
+break;
+};
+ else {
+alert('Welcome ' + userName + ', glad you\'re here!');
+};
+var counter = 0;
+
+ 
+function q1 () alert{var answer1 = prompt('Was I born in Kirkland, WA?').toLowerCase();
+  if (answer1 === 'yes' || answer1 === 'y') {
+    alert('Right! Well done.');
+    console.log('q1 Right!');
+    counter++;
+  } else {
+    alert('Wrong! Try again...');
+  
+  }
+  console.log('q1 wrong');       
+    break; 
+  }  
+
+q1();
+
+function q2() { var answer2 = prompt('Have I been playing guitar since I was 15?').toLowerCase();
+  if (answer2 === 'yes' || answer2 === 'y') {
+    alert('Correct! Well done!');
+    counter++;
+    console.log('q2 right!');
+  } else {
+    alert('WRONG! How could you not know?');
+    console.log('q2 wrong!');
+  }
 }
+
+q2();
+
+function q3() {var answer3 = prompt('Do I have 2 cats?').toLowerCase();
+  if (answer3 === 'yes' || answer3 === 'y') {
+    alert('Correct! Well done!');
+    counter++;
+    console.log('q3 right!');
+  } else {
+    alert('WRONG!');
+    console.log('q3 wrong!');
+  }
+}
+
+q3();
+
+function q4() {var answer4 = prompt('Do I hate the Sounders?').toLowerCase();
+  if (answer4 === 'no' || answer4 === 'n') {
+    alert('Correct! GO SOUNDERS!');
+    console.log('q4 right!');
+    counter++;
+6  } else {
+    alert('WRONG!');
+    console.log('q4 wrong!');
+  }
+}
+
+q4();
+
+function q5() {var answer5 = prompt('Do I manage a night club?').toLowerCase();
+  if (answer5 === 'yes' || answer5 === 'y') {
+    alert('Correct! I manage the Underground!');
+    console.log('q5 right!');
+    counter++;
+  } else {
+    alert('WRONG!');
+    console.log('q5 wrong!');
+  }
+}
+
+q5();
+
+function q6() {
+
+  var numberGameGuesses = 0;
+  while(numberGameGuesses < 4) {
+    var answer6 = parseInt(prompt('What is my favorite number?'));
+    if (answer6 === 7) {
+      alert('Correct! You are obviously strong with the force young padawan...');
+      console.log('q6 right!');
+      break;
+      counter++;
+    } else if(answer6 > 7) {
+      alert('Wrong! You\'re answer is too high!');
+      numberGameGuesses++;
+    } else if(answer6 < 7) {
+      alert('You\'re answer is too low!');
+      numberGameGuesses++;
+    } else {
+      alert('Please enter a number!');
+      numberGameGuesses++;
+    }
+    console.log('q6 wrong!');
+  }
+}
+q6();
+
+function q7() {
+  var statesLivedIn = ['AZ', 'LA', 'NY'];
+  var statesGuesses = 0;
+  while(statesGuesses < 6) {
+    var answer7 = prompt('What states have I lived in besides Washington? Please use state abbreviations for you\'re answer.').toUpperCase();
+    if(answer7 === statesLivedIn[0] || answer7 === statesLivedIn[1] || answer7 === statesLivedIn[2]) {
+      alert('Correct! I have lived in that state!');
+      console.log('q7 right!');
+      counter++;
+      break;
+    } else {
+      alert('Sorry, you are incorrect!');
+      console.log('q7 wrong!');
+      statesGuesses++;
+    }
+  }
+}
+q7();
+
+alert('You got' + counter + ' out of 7 correct!');
