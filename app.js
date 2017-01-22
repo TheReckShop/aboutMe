@@ -14,7 +14,7 @@ function start() {var intro = confirm('Hello what\'s your name?');
   }
 };
 start();
-name(); 
+
       
        
 function q1 () {var answer1 = prompt('Was I born in Kirkland, WA?').toLowerCase();
