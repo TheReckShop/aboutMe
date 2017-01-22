@@ -7,13 +7,16 @@ function start() {var intro = confirm('Hello what\'s your name?');
   while (start = true) {
     alert('Welcome ' + name + ', glad you\'re here!');
     break;
+
   }
   while (start = false){
     alert('Please enter a name!');
   }
 };
 start();
-
+name(); 
+      
+       
 function q1 () {var answer1 = prompt('Was I born in Kirkland, WA?').toLowerCase();
   if (answer1 === 'yes' || answer1 === 'y') {
     alert('Right! Well done.');
@@ -21,9 +24,11 @@ function q1 () {var answer1 = prompt('Was I born in Kirkland, WA?').toLowerCase(
     counter++;
   } else {
     alert('Wrong! Try again...');
-    console.log('q1 wrong');
+  
   }
-}
+  console.log('q1 wrong');       
+    break; 
+  }  
 
 q1();
 
@@ -63,7 +68,6 @@ function q4() {var answer4 = prompt('Do I hate the Sounders?').toLowerCase();
     console.log('q4 wrong!');
   }
 }
-
 q4();
 
 function q5() {var answer5 = prompt('Do I manage a night club?').toLowerCase();
