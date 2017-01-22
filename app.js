@@ -1,12 +1,19 @@
 'use-strict';
 var userName:
 
+var start;
 var counter = 0;
-function name = prompt('Hello what\'s your name?') {
-alert('Welcome ' + name + ', glad you\'re here!');
-userName = name;
-break;
+function start() {var intro = confirm('Hello what\'s your name?');
+  console.log(start);
+  while (start = true) {
+    alert('Welcome ' + name + ', glad you\'re here!');
+    break;
+  }
+  while (start = false){
+    alert('Please enter a name!');
+  }
 };
+start();
 name(); 
       
        
@@ -56,7 +63,7 @@ function q4() {var answer4 = prompt('Do I hate the Sounders?').toLowerCase();
     alert('Correct! GO SOUNDERS!');
     console.log('q4 right!');
     counter++;
-6  } else {
+  } else {
     alert('WRONG!');
     console.log('q4 wrong!');
   }
