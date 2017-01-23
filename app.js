@@ -1,17 +1,15 @@
 'use strict';
+// function q0() {
 
-var greeting = confirm('Hello, I\'m David C Cole\'s aboutMe Bot! We are going to play a guessing game! All questions have yes or no answers. Are you ready?');
-
-if (greeting) {
-  console.log('Woot! You straight prepared holmes!');
-} else {
-  console.log('OH NO! AHHHHHHHHHHHHH');
+var introCheck = confirm('Would you like to play a game?');
+if (introCheck == true) {
+  alert('GO GO GO');
 }
-
+// q0();
 var user = prompt('What is your name Bruh?');
-console.log('This user\'s name is ' + user + '!');
-
-document.write('User name is: ' + user + '. ');
+var userName = user;
+console.log('This user\'s name is ' + userName + '!');
+document.write('User name is: ' + userName + '. ');
 
 var rightAnswer = 0;
 
