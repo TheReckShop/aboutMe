@@ -136,7 +136,9 @@ function questionSeven() {
   while (q7Guesses < 6) {
     rightAnswers = ['NY', 'UT', 'LA'];
     var q7Answer = prompt('Seventh Question ' + user + ': What other states besides Washington has David WORKED IN? You have six guesses. Please answer with a 2 letter state name...').toUpperCase();
-    if (q7Answer === rightAnswers[0] || q7Answer === rightAnswers[1] || q7Answer === rightAnswers[3]) {
+
+    if (q7Answer === rightAnswers[0] || q7Answer === rightAnswers[1] || q7Answer === rightAnswers[2]) {
+
       alert('Oh man! You must be mad psychic yo, because that is the correct answer!');
       q7Guesses++;
       console.log('q7 RIGHT!');
