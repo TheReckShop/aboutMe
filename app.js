@@ -128,19 +128,19 @@ function questionSix() {
     }
   }
 }
-
+var guessArray = [];
 function questionSeven() {
   document.write('Seventh Question ' + user + ': What other states besides Washington has David WORKED IN? You have six guesses. Please answer with a 2 letter state name... ');
 
   var q7Guesses = 0;
   while (q7Guesses < 6) {
+    rightAnswers = ['NY', 'UT', 'LA'];
     var q7Answer = prompt('Seventh Question ' + user + ': What other states besides Washington has David WORKED IN? You have six guesses. Please answer with a 2 letter state name...').toUpperCase();
-    if (q7Answer === 'NY' || q7Answer === 'UT' || q7Answer === 'LA') {
+    if (q7Answer === rightAnswers[0] || q7Answer === rightAnswers[1] || q7Answer === rightAnswers[3]) {
       alert('Oh man! You must be mad psychic yo, because that is the correct answer!');
       q7Guesses++;
       console.log('q7 RIGHT!');
       document.write('q7 RIGHT! ');
-      rightAnswer++;
       break;
     } else {
       alert('Sorry that is incorrect! Please make sure you\'re answer is in the for of two letters!');
