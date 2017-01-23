@@ -1,21 +1,15 @@
-'use-strict';
+'use strict';
+// function q0() {
 
-var start;
-var counter = 0;
-function start() {var intro = confirm('Hello what\'s your name?');
-  console.log(start);
-  while (start = true) {
-    alert('Welcome ' + name + ', glad you\'re here!');
-    break;
-
-  }
-  while (start = false){
-    alert('Please enter a name!');
-  }
-};
-start()
-
-
+var introCheck = confirm('Would you like to play a game?');
+if (introCheck == true) {
+  alert('GO GO GO');
+}
+// q0();
+var user = prompt('What is your name Bruh?');
+var userName = user;
+console.log('This user\'s name is ' + userName + '!');
+document.write('User name is: ' + userName + '. ');
 
 var rightAnswer = 0;
 
