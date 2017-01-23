@@ -1,15 +1,16 @@
 'use strict';
-// function q0() {
 
-var introCheck = confirm('Would you like to play a game?');
-if (introCheck == true) {
-  alert('GO GO GO');
-}
-// q0();
-var user = prompt('What is your name Bruh?');
-var userName = user;
-console.log('This user\'s name is ' + userName + '!');
-document.write('User name is: ' + userName + '. ');
+var readyCheck = confirm('Lets learn about Dave shall we?');
+
+function nameAsk() {
+  if (readyCheck == true){
+    var user = prompt('What is your name Bruh?');
+    console.log('This user\'s name is ' + user + '!');
+    var userName = user;
+
+    document.write('User name is: ' + user + '. ');
+  }
+};
 
 var rightAnswer = 0;
 
@@ -128,21 +129,19 @@ function questionSix() {
     }
   }
 }
-var guessArray = [];
+
 function questionSeven() {
   document.write('Seventh Question ' + user + ': What other states besides Washington has David WORKED IN? You have six guesses. Please answer with a 2 letter state name... ');
 
   var q7Guesses = 0;
   while (q7Guesses < 6) {
-    rightAnswers = ['NY', 'UT', 'LA'];
     var q7Answer = prompt('Seventh Question ' + user + ': What other states besides Washington has David WORKED IN? You have six guesses. Please answer with a 2 letter state name...').toUpperCase();
-
-    if (q7Answer === rightAnswers[0] || q7Answer === rightAnswers[1] || q7Answer === rightAnswers[2]) {
-
+    if (q7Answer === 'NY' || q7Answer === 'UT' || q7Answer === 'LA') {
       alert('Oh man! You must be mad psychic yo, because that is the correct answer!');
       q7Guesses++;
       console.log('q7 RIGHT!');
       document.write('q7 RIGHT! ');
+      rightAnswer++;
       break;
     } else {
       alert('Sorry that is incorrect! Please make sure you\'re answer is in the for of two letters!');
@@ -153,6 +152,7 @@ function questionSeven() {
   }
 }
 
+nameAsk();
 questionOne();
 questionTwo();
 questionThree();
