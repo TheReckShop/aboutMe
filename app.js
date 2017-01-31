@@ -1,17 +1,34 @@
 'use strict';
-// function q0() {
-
-var introCheck = confirm('Would you like to play a game?');
-if (introCheck == true) {
-  alert('GO GO GO');
-}
-// q0();
-var user = prompt('What is your name Bruh?');
-var userName = user;
-console.log('This user\'s name is ' + userName + '!');
-document.write('User name is: ' + userName + '. ');
-
+var user;
 var rightAnswer = 0;
+
+function confirmCheck() {
+var x = confirm('Lets learn about Dave shall we?');
+console.log(x);
+if (x == true) {
+  alert('Great! Let\'s get started!');
+  user = prompt('What is your name Bruh?');
+  if (user.length > 0) {
+    console.log('This user\'s name is ' + user + '!');
+    document.write('User name is: ' + user + '. ');
+    questionOne();
+    questionTwo();
+    questionThree();
+    questionFour();
+    questionFive();
+    questionSix();
+    questionSeven();
+    if (rightAnswer === 7) {
+      alert('WELL DONE SON! YOUR SCORE WAS ' + rightAnswer + ' OUT OF 7!!! YOU GOT EVERY ANSWER CORRECT!');
+    } else {
+      alert('Sorry, ' + user + ' you only got ' + rightAnswer + ' out of 7 correct. TRY AGAIN!');
+    }
+  }
+} else {
+  alert('Too bad! He\'s a good dude');
+  }
+};
+
 
 function questionOne() {
   var q1 = prompt('So first question ' + user + ': Does David own two cats?').toUpperCase();
@@ -133,9 +150,10 @@ function questionSeven() {
   document.write('Seventh Question ' + user + ': What other states besides Washington has David WORKED IN? You have six guesses. Please answer with a 2 letter state name... ');
 
   var q7Guesses = 0;
+  var rightAnswers = ['NY', 'UT', 'LA'];
   while (q7Guesses < 6) {
     var q7Answer = prompt('Seventh Question ' + user + ': What other states besides Washington has David WORKED IN? You have six guesses. Please answer with a 2 letter state name...').toUpperCase();
-    if (q7Answer === 'NY' || q7Answer === 'UT' || q7Answer === 'LA') {
+    if (rightAnswers[0] === 'NY' || rightAnswers[1] === 'UT' || rightAnswers[2] === 'LA') {
       alert('Oh man! You must be mad psychic yo, because that is the correct answer!');
       q7Guesses++;
       console.log('q7 RIGHT!');
@@ -150,11 +168,4 @@ function questionSeven() {
     }
   }
 }
-
-questionOne();
-questionTwo();
-questionThree();
-questionFour();
-questionFive();
-questionSix();
-questionSeven();
+confirmCheck();
