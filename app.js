@@ -1,4 +1,5 @@
 'use strict';
+<<<<<<< HEAD
 var user;
 var rightAnswer = 0;
 
@@ -26,6 +27,18 @@ if (x == true) {
   }
 } else {
   alert('Too bad! He\'s a good dude');
+=======
+
+var readyCheck = confirm('Lets learn about Dave shall we?');
+
+function nameAsk() {
+  if (readyCheck == true){
+    var user = prompt('What is your name Bruh?');
+    console.log('This user\'s name is ' + user + '!');
+    var userName = user;
+
+    document.write('User name is: ' + user + '. ');
+>>>>>>> f783b19036cfd79dd3f97eb4a98b96eb91805a81
   }
 };
 
@@ -168,4 +181,22 @@ function questionSeven() {
     }
   }
 }
+<<<<<<< HEAD
 confirmCheck();
+=======
+
+nameAsk();
+questionOne();
+questionTwo();
+questionThree();
+questionFour();
+questionFive();
+questionSix();
+questionSeven();
+
+if (rightAnswer === 7) {
+  alert('WELL DONE SON! YOUR SCORE WAS ' + rightAnswer + ' OUT OF 7!!! YOU GOT EVERY ANSWER CORRECT!');
+} else {
+  alert('Sorry, ' + user + ' you only got ' + rightAnswer + ' out of 7 correct. TRY AGAIN!');
+}
+>>>>>>> f783b19036cfd79dd3f97eb4a98b96eb91805a81
